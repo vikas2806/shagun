@@ -65,20 +65,20 @@ gsap.from(".images",{
     gsap.to(s, {
       y: window.innerHeight + 50,
       x: Math.random() * window.innerWidth,
-      duration: 2 + Math.random() * 13,
+      duration: 2 + Math.random() * 3,
       ease: "linear",
-      repeat: 5,
+      repeat: -1,
       delay: i * 0.2
     });
   });
     const ysprinkle = document.querySelectorAll(".sprinkley");
   ysprinkle.forEach((s, i) => {
     gsap.to(s, {
-      y: window.innerHeight - 500,
+      y: window.innerHeight + 50,
       x: Math.random() * window.innerWidth,
-      duration: 2 + Math.random() * 13,
+      duration: 2 + Math.random() * 3,
       ease: "linear",
-      repeat: 5,
+      repeat: -1,
       delay: i * 0.2
     });
   });

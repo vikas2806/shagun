@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Access</title>
+</head>
+<body style="text-align:center; margin-top:100px; font-family:sans-serif; ">
+
+  <h2>🔒 This site is only for Special one</h2>
+
+  <input type="password" id="pwd" placeholder="Enter The password Babe " />
+  <br><br>
+  <button onclick="unlock()">Unlock</button>
+
+  <p id="msg" style="color:red;"></p>
+
+  <script>
+    const PASSWORD = "shagun"; // change this
+
+    function unlock() {
+      if (document.getElementById("pwd").value === PASSWORD) {
+        localStorage.setItem("site_access", "yes");
+        window.location.href = "/";
+      } else {
+        document.getElementById("msg").innerText = "Wrong password 😅";
+      }
+    }
+  </script>
+
+</body>
+</html>

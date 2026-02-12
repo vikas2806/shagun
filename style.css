@@ -1,0 +1,282 @@
+@import "tailwindcss";
+
+body{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: black;
+    /* background-color: darkmagenta; */
+
+}
+.sprinkle {
+  position: fixed;
+  top: -20px;
+  width: 8px;
+  height: 8px;
+  background: rgb(191, 12, 12);
+  border-radius: 50%;
+  z-index: 1px;
+}
+.sprinkley {
+  position: fixed;
+  top: -20px;
+  width: 8px;
+  height: 8px;
+  background: rgb(241, 236, 236);
+  border-radius: 50%;
+}
+ .firsthead{
+    word-break: normal;       /* default, avoids breaking words */
+  overflow-wrap: break-word; /* breaks only at spaces */
+  white-space: normal; 
+ }
+
+
+ .firsthead{
+      color: rgb(246, 129, 275);
+    font-size: 50px;
+    font-weight: bolder;
+        word-break: normal;       /* default, avoids breaking words */
+  overflow-wrap: break-word; /* breaks only at spaces */
+  white-space: normal; 
+   color: burlywood;
+}
+ 
+h2{
+    color: burlywood;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* h1 span{
+    display: inline-block;
+} */
+
+.flower-para{
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 25px;
+ color: burlywood;
+}
+
+
+.note1-container {
+  position: relative;
+  display: inline-block;
+}
+
+.note1-container img {
+  display: block;
+  width: 30vw;
+
+}
+.note3{
+  width: 67vw;
+  height: 22vh;
+}
+.note1-text {
+  position: absolute;
+  top: 25%;   /* adjust as needed */
+  left: 18%;
+  font-size: 17px;
+  color: darkblue;
+  font-weight: bold;
+  transform: rotate(-15deg);
+  font-family: georgia;
+  font-style: italic;
+   color: rgb(237, 78, 144);
+}
+
+.para{
+  font-weight: bolder;
+ color: burlywood;
+}
+
+.heart{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ padding-bottom: 40%;
+}
+
+.throwing-flower {
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+  left: 10px;
+}
+.photo{
+  /* width: 40vw;
+  height: 30vh; */
+  object-fit: fill;
+  border-radius: 10px;
+   max-width: 100%;
+  height: auto; /* keeps aspect ratio */
+
+}
+.flower-container
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+ 
+}
+
+
+.images {
+  display: flex; 
+     width: 90vw;             
+  scroll-behavior: smooth;   
+  width: 100%;                
+  height: 250px;  
+    overflow: hidden;  
+         
+}
+
+.image-track {
+  display: flex;
+  white-space: nowrap;
+}
+
+.images img {
+  flex: 0 0 auto;            
+  width: 100%;           
+  margin-right: 10px;  
+       
+}
+
+
+.laavphoto{
+    transform: perspective(600px) rotateY(5deg) rotateX(3deg);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+object-fit: fill;
+border-radius: 7px;
+ max-width: 100%;
+  height: auto; /* keeps aspect ratio */
+
+}
+
+.envelope {
+  position: relative;
+  width: 350px;
+  height: 280px;
+  margin: 50px auto;
+  background: url("./images/envelope.png") no-repeat center/cover;
+
+  
+   
+}
+
+.envelope,
+#openBtn,
+#closeBtn {
+  opacity: 0; 
+  transform: translateY(70px);
+  transition: opacity 5s ease, transform 3s ease;
+  position: relative;
+  z-index: 10; /* keep above envelope */
+}
+
+#openBtn,
+#closeBtn {
+  opacity: 0; 
+  transform: translateY(70px);
+  transition: opacity 3s ease, transform 1s ease;
+  position: relative;
+  z-index: 10; /* keep above envelope */
+}
+
+#openBtn.visible,
+#closeBtn.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.flap {
+  /* position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  transform-origin: top; */
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;     /* flap color *//* rotate from top edge */
+  z-index: 2;   
+}
+
+.letter {
+  bottom: 0%;
+  padding-top: 4%;
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  width: 80%;
+  height: 68vh;
+  object-fit: cover;
+  background: url("./images/annaletter2.png") no-repeat center/cover;
+  opacity: 0; 
+  border-radius: 12px;
+    top: 0%;
+  left: 12%; 
+
+    
+
+}
+
+#openBtn{
+    margin-left: 10px;
+  background: rgb(74, 185, 74);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bolder;
+}
+
+
+#closeBtn {
+  margin-left: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.happyanna{
+margin: 10%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+display: none;
+
+}
+
+#showBtn{
+background-color: rgb(241, 65, 65);
+border: none;
+border-radius: 2px;
+text-align: center;
+bottom: 0%;
+padding: 2px;
+margin-top: 15%;
+}
+
+.Glimpse{
+      color: burlywood;
+}

@@ -1,0 +1,26 @@
+body{
+    background-color: pink ;
+
+}
+
+.unlock{
+    background-color: rgb(92, 201, 92);
+    border: 1px solid black;
+    padding: 7px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.input{
+    padding: 7px;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#msg{
+    
+    font-size: 38px;
+}

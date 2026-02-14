@@ -181,6 +181,7 @@ const envelope = document.querySelector(".envelope");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn");
 
+
 window.addEventListener("scroll", () => {
   const rect = envelope.getBoundingClientRect();
   const windowHeight = window.innerHeight;
@@ -258,6 +259,8 @@ showBtn.addEventListener("click", () => {
     ease: "power2.out"
   });
 });
+
+
 
 
 
